@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="395dp"
+        android:layout_height="654dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            app:srcCompat="@drawable/head" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="casual"
+            android:text="SOLAR EASE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#B011CC"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/latitud_editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Latitud(Grados Centigrados)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#5912D6" />
+
+        <EditText
+            android:id="@+id/Longitud_editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Longitud(Grados Centigrados)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#4F1CA8" />
+
+        <EditText
+            android:id="@+id/Area_editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Area(Metros Cuadrados)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#142898" />
+
+        <SeekBar
+            android:id="@+id/inclination_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#A3043A"
+            android:progress="90" />
+
+        <TextView
+            android:id="@+id/inclination_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="INCLINACION DE PANELES: 30°"
+            android:textAlignment="center"
+            android:textColor="#1A1B1B"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#C5960A"
+            android:text="CALCULAR RESULTADO" />
+
+        <TextView
+            android:id="@+id/Resultado_textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=" "
+            android:textColor="#090909" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/footer" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
